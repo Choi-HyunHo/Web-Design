@@ -1,0 +1,132 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::before, .clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+    color: wheat;
+}
+
+li{
+    list-style: none;
+}
+
+/* 레이아웃 */
+#wrap{
+    width: 1200px;
+    height: 700px;
+    background: #777;
+    margin: 0 auto;
+}
+
+#header{
+    width: 1200px;
+    height: 100px;
+    background:#666;
+}
+
+#header .logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+    background:#555;
+}
+
+#header .nav{
+    float: right;
+    width: 600px;
+    margin: 28px;
+    background: #b39bbd;
+}
+
+#header .nav li a{
+    display: block;
+    padding: 10px;
+    font-size: 20px;    
+}
+
+#header .nav li a:hover{
+    background: rgba(0,0,0,0.4);
+}
+
+#header .nav li{
+    position: relative;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+#header .nav li ul.submenu{
+   display: none;
+   position: absolute;
+   left: 0;
+   top: 44px;
+   background: #b39bbd;
+}
+
+#header .nav li ul.submenu li{
+    width: 100%;
+    border-right: 0;
+}
+
+#banner{
+    width: 1200px;
+    height: 300px;
+    background: #333;
+}
+
+#contents > div{
+    float: left;
+}
+
+#contents .cont1{
+    width: 400px;
+    height: 200px;
+    background: #666;
+}
+
+#contents .cont2{
+    width: 400px;
+    height: 200px;
+    background: #555;
+}
+
+#contents .cont3{
+    width: 400px;
+    height: 200px;
+    background: #444;
+}
+
+#footer > div{
+    float: left;
+}
+
+#footer .foot1{
+    width: 200px;
+    height: 100px;
+    background: #888;
+}
+
+
+#footer .foot2{
+    width: 800px;
+    height: 100px;
+    background: #666;
+}
+
+
+#footer .foot3{
+    width: 200px;
+    height: 100px;
+    background: #888;
+}
+
+
