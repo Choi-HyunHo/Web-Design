@@ -1,0 +1,139 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.clearfix::before, .clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 레이아웃 */
+#wrap{
+    width: 1200px;
+    background: #888;
+    margin: 0 auto;
+}
+
+#header{
+    position: relative;
+    background: #777;
+}
+
+#header .logo{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background: #666;
+    
+}
+
+#header .nav{
+    position: relative;
+    float: right;
+    width: 100%;
+    margin-top: 56px;
+}
+
+#header .nav ul{   /* 빼주는 역할 */
+    padding-left: 40%;
+}
+
+#header .nav ul li{
+    position: relative;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+#header .nav ul li a{
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    background: #b39bbd;
+}
+
+#header .nav ul li a:hover{
+    background: rgba(0,0,0,0.4);
+}
+
+#header .nav ul li ul.submenu{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 44px;
+    height: 176px;
+    padding-left: 0;
+}
+
+#header .nav ul li:first-child ul.submenu::after{
+    content: '';
+    position: absolute;
+    left: -480px;
+    top: 0;
+    width: 480px;
+    height: 188px;
+    background: #b39bbd;
+}
+
+#header .nav ul li ul.submenu li{
+    width: 100%;
+}
+
+#banner{
+    height: 300px;
+}
+
+#contents > div{
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+
+#contents > .cont1{
+    background: #333;
+}
+
+#contents > .cont2{
+    background: #666;
+}
+
+#contents > .cont3{
+    background: #555;
+}
+
+#footer > div{
+    float: left;
+}
+
+#footer > .foot1{
+    width: 200px;
+    height: 100px;
+    background: #444;
+}
+
+#footer > .foot2{
+    width: 800px;
+    height: 100px;
+    background: #777;
+}
+
+#footer > .foot3{
+    width: 200px;
+    height: 100px;
+    background: #999;
+}
